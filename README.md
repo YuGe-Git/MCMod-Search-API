@@ -24,7 +24,7 @@ git clone https://github.com/your-username/mcmod-search-api.git
 ## API 使用说明
 
 ### 基本信息
-- 基础URL：`http://your-domain.com/search_api.php`
+- 基础URL：`http://你的域名地址.com/search_api.php`
 - 请求方式：GET
 - 返回格式：JSON
 
@@ -92,14 +92,26 @@ GET /search_api.php?key={search_term}
 | best_result.data.sub_name | string\|null | 模组英文名或副标题，如无则为 null |
 | other_results | array | 其他相关结果数组，每个元素格式同 best_result |
 
-### 示例
+### 示例图片
+
+#### 1. 访问 API 根地址
+![API 使用说明](docs/images/api_docs.png)
+
+当直接访问 API 根地址时，会返回详细的 API 使用说明文档。
+
+#### 2. 搜索模组示例
+![搜索结果示例](docs/images/search_example.png)
+
+使用关键词"IC2"搜索时的返回结果示例。
+
+### 示例请求
 
 ```bash
 # 搜索 IC2 模组
-curl "http://your-domain.com/search_api.php?key=IC2"
+curl "http://你的域名地址.com/search_api.php?key=IC2"
 
 # 搜索工业时代2
-curl "http://your-domain.com/search_api.php?key=工业时代2"
+curl "http://你的域名地址.com/search_api.php?key=工业时代2"
 ```
 
 ## 评分系统
