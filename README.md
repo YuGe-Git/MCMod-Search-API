@@ -95,12 +95,12 @@ GET /search_api.php?key={search_term}
 ### 示例图片
 
 #### 1. 访问 API 根地址
-![API 使用说明](docs/images/api_docs.png)
+![API 使用说明](image/api_docs.png)
 
 当直接访问 API 根地址时，会返回详细的 API 使用说明文档。
 
 #### 2. 搜索模组示例
-![搜索结果示例](docs/images/search_example.png)
+![搜索结果示例](image/search_example.png)
 
 使用关键词"IC2"搜索时的返回结果示例。
 
